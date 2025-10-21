@@ -6,9 +6,9 @@ This lab series teaches GitHub Copilot through hands-on exercises using a pre-bu
 
 | Lab | Focus | Duration | Key Skills |
 |-----|-------|----------|------------|
-| [Lab 1](./Lab-01-Inline-Completion/) | Inline Completion | 20 minutes | Auto-completion, suggestion acceptance, comment-driven development |
-| [Lab 2](./Lab-02-Chat-Mode/) | Chat Mode | 20 minutes | Interactive problem-solving, architecture guidance, code generation |
-| [Lab 3](./Lab-03-Agent-Mode/) | Agent Mode | 20 minutes | Multi-step coordination, code analysis, testing infrastructure |
+| [Lab 1](./Labs/Lab-01-Inline-Completion/) | Inline Completion | 20 minutes | Auto-completion, suggestion acceptance, comment-driven development |
+| [Lab 2](./Labs/Lab-02-Chat-Mode/) | Chat Mode | 20 minutes | Interactive problem-solving, architecture guidance, code generation |
+| [Lab 3](./Labs/Lab-03-Agent-Mode/) | Agent Mode | 20 minutes | Multi-step coordination, code analysis, testing infrastructure |
 
 **Total Time**: 60 minutes  
 **Prerequisites**: Visual Studio Code with GitHub Copilot extension enabled
