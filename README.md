@@ -43,7 +43,7 @@ For .NET SDK installation on Windows, prefer winget. If winget is unavailable, p
 
 ## Quick Start
 
-```bash
+```powershell
 cd BaseProject
 dotnet restore
 dotnet run

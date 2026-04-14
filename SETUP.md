@@ -12,7 +12,7 @@ This guide helps instructors and students run the GitHub Copilot labs on Visual 
 
 ### 1. Verify Base Project
 
-```bash
+```powershell
 cd BaseProject
 dotnet restore CopilotDemo.csproj
 dotnet build CopilotDemo.csproj
@@ -45,7 +45,7 @@ Confirm each student has:
 2. Open a terminal at repository root.
 3. Run:
 
-```bash
+```powershell
 cd BaseProject
 dotnet restore
 dotnet run
