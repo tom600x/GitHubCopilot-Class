@@ -2,9 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub-Copilot-Labs", "GitHub-Copilot-Labs", "{3F4AD4E8-6D4E-5B92-B37F-165FEA9A2DAB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHubCopilot-Class", "GitHubCopilot-Class", "{3F4AD4E8-6D4E-5B92-B37F-165FEA9A2DAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopilotDemo", "GitHub-Copilot-Labs\BaseProject\CopilotDemo.csproj", "{49E8A27D-5487-0F99-0406-4A091BB42ADF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopilotDemo", "BaseProject\CopilotDemo.csproj", "{49E8A27D-5487-0F99-0406-4A091BB42ADF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

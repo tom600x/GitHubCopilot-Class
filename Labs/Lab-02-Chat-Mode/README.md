@@ -1,8 +1,20 @@
 # Lab 2: Chat Mode Mastery
 
-**Duration**: 20 minutes  
+**Duration**: 15 minutes  
 **Focus**: Master GitHub Copilot's interactive Chat mode for problem-solving  
 **Outcome**: Enhance the task management system using conversational AI assistance
+
+## 15-Minute Core Path
+
+Use this compact sequence in class:
+
+1. Exercise 1 (feature ideation)
+2. Exercise 3 (service layer decision)
+3. Exercises 4-5 (implement and wire TaskItemService)
+4. Exercises 6 and 8 (categories + priorities)
+5. Exercise 9 or 10 (error handling or validation)
+
+Exercises 11-18 are optional follow-up or homework.
 
 ## Learning Objectives
 
@@ -23,11 +35,11 @@ By the end of this lab, you will:
 ### 1.1 Opening Copilot Chat
 
 **In Visual Studio Code:**
-- Press **Ctrl+Shift+I** or click the Chat icon
-- Or use **View > Open Chat**
+- Open Copilot Chat from the Chat icon, then use **Ask** mode
+- If needed, use the command palette and run **Chat: Open Chat**
 
-**In Visual Studio 2022:**
-- Press **Alt+/** or use **View > GitHub Copilot Chat**
+**In Visual Studio 2026:**
+- Open **GitHub Copilot Chat**, then use **Ask** mode
 
 ### 1.2 First Chat Interaction
 
@@ -38,6 +50,8 @@ I have a task management system with basic CRUD operations. What are 3 important
 ```
 
 **Observe**: How Chat provides structured, thoughtful recommendations vs simple code completion.
+
+Note: Keyboard shortcuts can vary by keymap/profile. Use command names as the source of truth.
 
 ## Step 2: Architectural Guidance with Chat
 

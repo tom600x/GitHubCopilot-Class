@@ -1,153 +1,89 @@
 # Quick Setup Guide
 
-This guide helps instructors and students get the GitHub Copilot Labs running quickly.
+This guide helps instructors and students run the GitHub Copilot labs on Visual Studio 2026 with .NET 10.
 
 ## Prerequisites
 
-- **Visual Studio Code** with GitHub Copilot extension enabled
-- **.NET 8.0 SDK** installed
-- **Git** for version control (optional)
+- Visual Studio 2026 with GitHub Copilot and GitHub Copilot Chat
+- .NET 10 SDK installed
+- Git (optional)
 
 ## Instructor Setup
 
 ### 1. Verify Base Project
 
-Navigate to the BaseProject folder and ensure it runs:
-
 ```bash
 cd BaseProject
-dotnet restore copiotdemo.csproj
-dotnet build copilotdemo.csprojdotne
-dotnet run
+dotnet restore CopilotDemo.csproj
+dotnet build CopilotDemo.csproj
+dotnet run --project CopilotDemo.csproj
 ```
 
-You should see:
-- Application starts without errors
-- Browser opens to localhost:5000 or similar
-- Home page displays with Bootstrap styling
+Expected result:
+
+- Application starts without build errors
+- Browser opens to localhost
+- Home page renders correctly
 
 ### 2. Student Environment Check
 
-Ensure each student has:
-- [ ] VS Code with GitHub Copilot extension active
-- [ ] .NET 8.0 SDK (`dotnet --version` shows 8.x)
-- [ ] Copilot enabled (green checkmark in VS Code status bar)
+Confirm each student has:
 
-### 3. Lab Timing Validation
+- VS 2026 signed in to GitHub
+- Copilot enabled in the IDE
+- .NET 10 available (`dotnet --version` reports 10.x)
 
-Each lab should take exactly 20 minutes:
-- **Lab 1**: 20 minutes for inline completion exercises
-- **Lab 2**: 20 minutes for Chat mode interactions  
-- **Lab 3**: 20 minutes for Agent mode coordination
+### 3. Lab Timing
 
-Total: **60 minutes** of hands-on Copilot training
+- Lab 1: 15 minutes (Inline)
+- Lab 2: 15 minutes (Chat Ask)
+- Lab 3: 15 minutes (Agent)
 
-## Student Setup
+## Student Setup (5 minutes)
 
-### Quick Start (5 minutes)
+1. Open this repository in Visual Studio 2026.
+2. Open a terminal at repository root.
+3. Run:
 
-1. **Open VS Code** in the Labs folder
-2. **Navigate to BaseProject**:
-   ```bash
-   cd BaseProject
-   dotnet restore
-   ```
-3. **Verify Copilot is active** (green checkmark in status bar)
-4. **Start with Lab 1**: Open `Lab-01-Inline-Completion/README.md`
-
-### Troubleshooting
-
-**Copilot not working?**
-- Check extension is enabled
-- Sign in to GitHub account
-- Restart VS Code if needed
-
-**Build errors?**
-- Verify .NET 8.0 SDK installed
-- Run `dotnet restore` in BaseProject folder
-- Check project file syntax
-
-**Can't see suggestions?**
-- Type some comments and wait
-- Try `Ctrl+Space` to trigger manually
-- Check Copilot settings in VS Code
-
-## Lab Structure
-
-### BaseProject Contents
-```
-BaseProject/
-├── CopilotDemo.csproj      # Complete project file
-├── Program.cs              # Basic MVC setup
-├── Controllers/
-│   └── HomeController.cs   # Home and Error actions
-├── Models/
-│   └── ErrorViewModel.cs   # Error handling model
-├── Views/
-│   ├── _ViewStart.cshtml   # Layout configuration
-│   ├── _ViewImports.cshtml # Global using statements
-│   ├── Shared/
-│   │   ├── _Layout.cshtml  # Bootstrap layout
-│   │   └── Error.cshtml    # Error page
-│   └── Home/
-│       ├── Index.cshtml    # Homepage
-│       └── Privacy.cshtml  # Privacy page
-└── wwwroot/               # Static files (CSS, JS)
+```bash
+cd BaseProject
+dotnet restore
+dotnet run
 ```
 
-### What Students Will Build
+4. Start [Lab 1](./Labs/Lab-01-Inline-Completion/README.md).
 
-Starting from the base project, students will add:
+## Copilot UI Notes (Current)
 
-**Lab 1 - Inline Completion:**
-- TaskItem model class
-- TaskItem controller with CRUD actions
-- Basic task item views
-- Navigation updates
+- Use Copilot Chat and switch modes with the mode selector.
+- Mode mapping:
+  - Ask: explanation, ideation, debugging guidance
+  - Copilot Edits / next edit suggestions: focused code edits
+  - Agent: multi-step tasks across files
+- If a documented shortcut differs, use the command palette command name.
 
-**Lab 2 - Chat Mode:**
-- TaskItem service layer
-- JSON storage implementation
-- Advanced task item features
-- Form validation
+## Troubleshooting
 
-**Lab 3 - Agent Mode:**
-- Unit testing infrastructure
-- Performance optimizations
-- Security enhancements
-- Documentation generation
+Copilot is unavailable:
 
-## Success Indicators
+- Verify sign-in to GitHub in Visual Studio
+- Verify Copilot subscription/access
+- Reload IDE window
 
-Students have succeeded when they can:
-- **Accept Copilot suggestions** confidently (Lab 1)
-- **Converse with Chat mode** to solve problems (Lab 2)
-- **Coordinate with Agent mode** for complex tasks (Lab 3)
+Build errors:
 
-Each lab builds complete functionality, so students see immediate progress and working features.
+- Run `dotnet --info` and confirm .NET 10 SDK is installed
+- Run `dotnet restore` from `BaseProject`
+- Rebuild solution
 
-## Instructor Tips
+Chat/Agent commands not visible:
 
-### Timing Management
-- Start each lab with 20-minute timer
-- Give 2-minute warning before end
-- Allow brief overrun for completion
+- Ensure GitHub Copilot Chat component is installed/enabled
+- Update Visual Studio to latest 2026 build
 
-### Student Support
-- Encourage experimentation with suggestions
-- Show how to accept/reject Copilot recommendations
-- Demonstrate Chat mode conversation techniques
+## Instructor Checklist
 
-### Common Issues
-- Students may rush through exercises - encourage exploration
-- Some may resist Copilot suggestions - show benefits
-- Technical issues: have backup plans ready
-
-## Post-Lab Assessment
-
-Students should demonstrate:
-1. **Comfort with inline completion** (accepting/modifying suggestions)
-2. **Effective Chat conversations** (asking good questions)
-3. **Agent coordination skills** (breaking down complex tasks)
-
-The complete task management application serves as evidence of their Copilot mastery progression.
+- Base app launches successfully
+- Students can open Copilot Chat
+- Students can switch Ask/Agent modes and locate Copilot Edits
+- Students complete labs in sequence

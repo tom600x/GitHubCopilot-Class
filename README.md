@@ -1,112 +1,104 @@
-# GitHub Copilot Labs - Complete Learning Series
+# GitHub Copilot Labs - VS 2026 + .NET 10
 
-This lab series teaches GitHub Copilot through hands-on exercises using a pre-built ASP.NET Core 8.0 MVC application. Students will master the three core modes of GitHub Copilot while building a practical task management system.
+This repository is a hands-on class for teaching GitHub Copilot using a pre-built ASP.NET Core MVC app on .NET 10.
 
-## 🎯 Lab Overview
+## Lab Overview
 
 | Lab | Focus | Duration | Key Skills |
 |-----|-------|----------|------------|
-| [Lab 1](./Labs/Lab-01-Inline-Completion/) | Inline Completion | 20 minutes | Auto-completion, suggestion acceptance, comment-driven development |
-| [Lab 2](./Labs/Lab-02-Chat-Mode/) | Chat Mode | 20 minutes | Interactive problem-solving, architecture guidance, code generation |
-| [Lab 3](./Labs/Lab-03-Agent-Mode/) | Agent Mode | 20 minutes | Multi-step coordination, code analysis, testing infrastructure |
+| [Lab 1](./Labs/Lab-01-Inline-Completion/) | Inline Completion | 15 minutes | Fast code completion, suggestion control, comment-driven development |
+| [Lab 2](./Labs/Lab-02-Chat-Mode/) | Chat (Ask) | 15 minutes | Interactive problem-solving, architecture guidance, targeted code changes |
+| [Lab 3](./Labs/Lab-03-Agent-Mode/) | Agent Mode | 15 minutes | Multi-step planning, repo-wide changes, verification workflows |
 
-**Total Time**: 60 minutes  
-**Prerequisites**: Visual Studio Code with GitHub Copilot extension enabled
+Total class time: 45 minutes.
 
-## 🚀 Quick Start
+## Requirements
 
-1. **Setup Base Project**:
-   ```bash
-   cd BaseProject
-   dotnet restore
-   dotnet run
-   ```
+- Visual Studio 2026 with GitHub Copilot and GitHub Copilot Chat enabled
+- .NET 10 SDK installed
+- GitHub account with Copilot access
 
-2. **Complete Labs in Order**:
-   - Start with Lab 1 for foundational skills
-   - Progress to Lab 2 for interactive features
-   - Finish with Lab 3 for advanced coordination
+## Copilot Prompt: Prerequisite Setup
 
-## 📋 What You'll Build
+Use this prompt in Copilot Chat before starting labs:
 
-By the end of these labs, you'll have a complete task management application with:
+```text
+Validate my environment for this repo and auto-install missing prerequisites where possible.
 
-- **TaskItem Model & Storage**: JSON-based persistence system
-- **CRUD Operations**: Create, read, update, delete tasks
-- **Service Layer**: Clean architecture with business logic separation
-- **Testing Infrastructure**: Unit tests with xUnit framework
-- **Performance Optimization**: Efficient data handling and caching
-- **Security Features**: Input validation and secure practices
+Requirements:
+- Visual Studio 2026 with GitHub Copilot and Copilot Chat
+- .NET 10 SDK
+- GitHub sign-in with Copilot access
 
-## 🛠 Technical Stack
+Please:
+1. Check what is already installed (dotnet version, VS version if detectable, and common tooling).
+2. List exactly what is missing.
+3. Automatically install anything safe and quick to install from terminal.
+4. Do NOT attempt to install Visual Studio 2026 from terminal (too large/slow). Only verify whether it is present.
+5. At minimum, auto-install .NET 10 SDK if missing.
+6. After setup, run quick validation commands and confirm I am ready.
 
-- **Framework**: ASP.NET Core 8.0 MVC
-- **UI**: Bootstrap 5 with responsive design
-- **Testing**: xUnit testing framework
-- **Storage**: JSON file-based persistence
-- **GitHub Copilot**: All three modes (Inline, Chat, Agent)
-
-## 💡 Learning Approach
-
-Each lab focuses on **one primary Copilot mode** to ensure mastery:
-
-### Lab 1: Inline Completion Mastery
-- Learn to work WITH Copilot's suggestions
-- Master comment-driven development
-- Build confidence with auto-completion
-
-### Lab 2: Chat Mode Proficiency  
-- Interactive problem-solving conversations
-## 🎓 Instructor Notes
-
-- **Timing**: Each lab is designed for exactly 20 minutes
-- **Pre-built Base**: Students start with working foundation, no setup time
-- **Progressive Complexity**: Skills build from lab to lab
-- **Practical Focus**: Real-world task management scenario
-- **Copilot Emphasis**: 100% focus on Copilot features, not ASP.NET complexity
-
-## 📁 Project Structure
-
-```
-GitHubCopilot-Class/Labs/
-├── README.md                    # This overview
-├── BaseProject/                 # Pre-built MVC foundation
-│   ├── CopilotDemo.csproj      # Project file with dependencies
-│   ├── Program.cs              # Application startup
-│   ├── Controllers/            # MVC controllers
-│   ├── Models/                 # Data models
-│   ├── Views/                  # Razor views
-│   └── wwwroot/               # Static files
-├── Lab-01-Inline-Completion/   # 20-minute inline completion lab
-├── Lab-02-Chat-Mode/          # 20-minute chat mode lab
-└── Lab-03-Agent-Mode/         # 20-minute agent mode lab
+For .NET SDK installation on Windows, prefer winget. If winget is unavailable, provide the exact manual install link and continue validation after I install it.
 ```
 
-## 🏆 Success Metrics
+## Quick Start
 
-Students will demonstrate mastery by:
-- **Lab 1**: Building models and controllers using inline completion
-- **Lab 2**: Implementing services and features via Chat conversations
-- **Lab 3**: Coordinating complex multi-step tasks with Agent mode
+```bash
+cd BaseProject
+dotnet restore
+dotnet run
+```
 
-Each lab builds upon the previous, creating a comprehensive learning experience that transforms students from Copilot beginners to confident practitioners.
+Then complete labs in order:
 
----
+1. Lab 1 - Inline Completion
+2. Lab 2 - Chat (Ask)
+3. Lab 3 - Agent Mode
 
-**Ready to start?** Begin with [Lab 1 - Inline Completion](./Lab-01-Inline-Completion/) to master the fundamentals!
-3. Suggest improvements for learning experience
-4. Share feedback on lab effectiveness
+## Technical Stack
 
----
+- Framework: ASP.NET Core MVC on .NET 10
+- UI: Bootstrap 5
+- Storage: JSON file persistence (introduced in labs)
+- Testing: xUnit (introduced in labs)
+- Copilot: Inline, Chat (Ask), Agent
 
-**Ready to start your GitHub Copilot journey?** 🚀
+## Copilot Guidance Validation (Current)
 
-### 👨‍💻 **Choose Your Path:**
+The instructions in this repo are aligned to current GitHub Copilot workflows:
 
-**🎯 New to Copilot?** → [Start with Veteran Benefits Labs](Veteran-Benefits-Labs/)
+- Chat and Agent are accessed from Copilot Chat with a mode selector.
+- Ask mode is best for explanation and guidance.
+- For focused code changes, use Copilot Edits or next edit suggestions.
+- Agent mode is best for multi-file, multi-step tasks with planning and execution.
+- Keyboard shortcuts can vary by IDE profile; command names in docs are authoritative.
 
-**🏗️ Enterprise Developer?** → [Jump to Database Labs](Database-Labs-README.md)
+## Project Structure
 
-**🤔 Not sure?** → Read both guides and pick what fits your timeline and goals
+```text
+GitHubCopilot-Class/
+├── BaseProject/
+│   ├── CopilotDemo.csproj
+│   ├── Program.cs
+│   ├── Controllers/
+│   ├── Models/
+│   ├── Views/
+│   └── wwwroot/
+└── Labs/
+    ├── Lab-01-Inline-Completion/
+    ├── Lab-02-Chat-Mode/
+    └── Lab-03-Agent-Mode/
+```
 
-*Both lab tracks teach the same core GitHub Copilot features but with different complexity levels and setup requirements. You can always do both for the complete experience!*
+## Learning Outcomes
+
+By the end of the labs, students should be able to:
+
+- Use inline suggestions efficiently and safely
+- Use Chat effectively for architecture and implementation guidance
+- Use Agent mode to execute complex tasks with checkpoints
+- Evaluate generated code for correctness, security, and maintainability
+
+## Next Step
+
+Start with [Lab 1 - Inline Completion](./Labs/Lab-01-Inline-Completion/README.md).

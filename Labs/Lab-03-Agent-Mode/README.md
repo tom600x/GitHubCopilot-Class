@@ -1,8 +1,20 @@
 # Lab 3: Agent Mode Mastery
 
-**Duration**: 20 minutes  
+**Duration**: 15 minutes  
 **Focus**: Master GitHub Copilot's Agent mode for complex multi-step tasks  
 **Outcome**: Complete comprehensive testing and optimization using Agent orchestration
+
+## 15-Minute Core Path
+
+Use this fast track for class delivery:
+
+1. Exercise 1 (initial multi-step plan)
+2. Exercise 2 or 3 (architecture or code quality review)
+3. Exercise 4 (testing strategy)
+4. Exercise 5 or 7 (performance or security pass)
+5. Exercise 8 (documentation generation)
+
+Exercises 9-13 are optional extension work.
 
 ## Learning Objectives
 
@@ -23,20 +35,18 @@ By the end of this lab, you will:
 ### 1.1 Accessing Agent Mode
 
 **In Visual Studio Code:**
-- Press **Ctrl+Shift+P**
-- Type **"Chat: Start New Agent Chat"**
-- Or click the Agent icon in the Chat panel
+- Open Copilot Chat, select **Ask**, then switch to **Agent**
+- If needed, use the command palette and run **Chat: Open Chat**
 
-**In Visual Studio 2022:**
-- Open **GitHub Copilot Chat** (Alt+/)
-- Type `@agent` to start agent commands
+**In Visual Studio 2026:**
+- Open **GitHub Copilot Chat**, select **Ask**, then switch to **Agent**
 
 ### 1.2 First Agent Interaction
 
 **🎯 Agent Exercise 1**: Start with this comprehensive request:
 
 ```
-@agent I have a task management system built with ASP.NET Core MVC. I need you to:
+I have a task management system built with ASP.NET Core MVC. I need you to:
 
 1. Analyze my entire codebase for potential improvements
 2. Create a comprehensive testing strategy
@@ -55,6 +65,8 @@ Please start by analyzing the project structure and providing a detailed improve
 
 **Observe**: How Agent provides structured, multi-step planning vs single responses.
 
+Note: Keyboard shortcuts can vary by keymap/profile. In class, use command names and the Ask-to-Agent switch as the source of truth.
+
 ## Step 2: Comprehensive Code Analysis
 
 ### 2.1 Architecture Review
@@ -62,7 +74,7 @@ Please start by analyzing the project structure and providing a detailed improve
 **🎯 Agent Exercise 2**: Request detailed analysis:
 
 ```
-@agent Perform a comprehensive architecture review of my task management system. Evaluate:
+Perform a comprehensive architecture review of my task management system. Evaluate:
 
 1. Code organization and structure
 2. Design patterns and best practices
@@ -79,7 +91,7 @@ Provide specific recommendations with priority levels (High, Medium, Low) and im
 **🎯 Agent Exercise 3**: Ask for quality analysis:
 
 ```
-@agent Analyze the code quality of my task management system. Review:
+Analyze the code quality of my task management system. Review:
 
 1. Code consistency and naming conventions
 2. Error handling patterns
@@ -98,7 +110,7 @@ For each issue, provide the problematic code example and the improved version.
 **🎯 Agent Exercise 4**: Request testing infrastructure:
 
 ```
-@agent Set up comprehensive testing for my task management system. I need:
+Set up comprehensive testing for my task management system. I need:
 
 1. Unit testing infrastructure with xUnit
 2. Integration tests for the complete flow
@@ -124,7 +136,7 @@ Create the complete testing project structure, sample tests for each component, 
 **🎯 Agent Exercise 5**: Request performance review:
 
 ```
-@agent Analyze and optimize the performance of my task management system. Consider:
+Analyze and optimize the performance of my task management system. Consider:
 
 1. JSON file operations efficiency
 2. Memory usage patterns
@@ -141,7 +153,7 @@ Provide specific performance improvements with before/after code examples and ex
 **🎯 Agent Exercise 6**: Plan for scale:
 
 ```
-@agent Help me plan for scaling my task management system. Address:
+Help me plan for scaling my task management system. Address:
 
 1. Moving from JSON files to database storage
 2. Implementing proper data access patterns
@@ -160,7 +172,7 @@ Provide a phased implementation plan with priorities and effort estimates.
 **🎯 Agent Exercise 7**: Comprehensive security review:
 
 ```
-@agent Perform a security assessment of my task management system. Evaluate:
+Perform a security assessment of my task management system. Evaluate:
 
 1. Input validation and sanitization
 2. File operation security
@@ -183,7 +195,7 @@ Follow Agent's recommendations to secure your application.
 **🎯 Agent Exercise 8**: Generate comprehensive documentation:
 
 ```
-@agent Generate complete documentation for my task management system including:
+Generate complete documentation for my task management system including:
 
 1. API documentation for all controller endpoints
 2. Model documentation with property descriptions
@@ -200,7 +212,7 @@ Use markdown format and include code examples, parameter descriptions, and respo
 **🎯 Agent Exercise 9**: Improve code documentation:
 
 ```
-@agent Add comprehensive XML documentation comments to my C# code. Include:
+Add comprehensive XML documentation comments to my C# code. Include:
 
 1. Class and method summaries
 2. Parameter descriptions
@@ -219,7 +231,7 @@ Show me examples for my TaskItemController and TaskItemService classes.
 **🎯 Agent Exercise 10**: Plan new feature development:
 
 ```
-@agent I want to add a dashboard feature to my task management system showing:
+I want to add a dashboard feature to my task management system showing:
 
 1. Task completion statistics
 2. Overdue task alerts
@@ -242,7 +254,7 @@ Provide a detailed implementation plan with time estimates and dependencies.
 **🎯 Agent Exercise 11**: Plan production deployment:
 
 ```
-@agent Create a deployment strategy for moving my task management system to production. Include:
+Create a deployment strategy for moving my task management system to production. Include:
 
 1. Environment configuration management
 2. Database migration from JSON to SQL Server
@@ -261,7 +273,7 @@ Provide step-by-step deployment checklist and configuration files.
 **🎯 Agent Exercise 12**: Understanding when to use each mode:
 
 ```
-@agent Analyze the differences between Agent mode, Chat mode, and Inline completion for software development. Provide:
+Analyze the differences between Agent mode, Chat mode, and Inline completion for software development. Provide:
 
 1. Specific use cases for each mode
 2. Strengths and limitations comparison
@@ -277,7 +289,7 @@ Include real examples from the task management system we've built.
 **🎯 Agent Exercise 13**: Optimize development workflow:
 
 ```
-@agent Based on my task management system development, create an optimized development workflow that effectively uses all three Copilot modes. Include:
+Based on my task management system development, create an optimized development workflow that effectively uses all three Copilot modes. Include:
 
 1. When to start with Agent planning
 2. How to transition from Agent to Chat for specific questions
@@ -343,7 +355,7 @@ Provide a practical workflow template for future projects.
 - **Chat Mode**: Interactive problem-solving and learning
 - **Agent Mode**: Complex project orchestration and strategic planning
 
-**Total Development Time**: ~60 minutes  
+**Total Development Time**: ~45 minutes  
 **Features Built**: Complete task management system with testing, security, and documentation  
 **Copilot Skills Mastered**: All three primary modes with best practices  
 

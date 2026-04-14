@@ -1,8 +1,20 @@
 # Lab 1: Inline Completion Mastery
 
-**Duration**: 20 minutes  
+**Duration**: 15 minutes  
 **Focus**: Master GitHub Copilot's inline code completion features  
 **Outcome**: Build a complete task management feature using only inline suggestions
+
+## 15-Minute Core Path
+
+Use this trimmed path for classroom timing:
+
+1. Complete Step 2 (Exercises 1-2)
+2. Complete Step 3 (Exercises 3-5)
+3. Complete Step 4 for Index/Create/Edit views (Exercises 6-8)
+4. Complete Step 5 navigation update (Exercise 10)
+5. Build/run and quick smoke test in Step 6
+
+Step 7 (Exercises 11-12) is optional stretch if time remains.
 
 ## Learning Objectives
 
@@ -14,7 +26,7 @@ By the end of this lab, you will:
 
 ## Prerequisites
 
-- [ ] Visual Studio Code or Visual Studio 2022 with GitHub Copilot enabled
+- [ ] Visual Studio 2026 (or VS Code) with GitHub Copilot enabled
 - [ ] Open the provided CopilotDemo base project
 - [ ] Basic understanding of ASP.NET Core MVC
 
@@ -318,6 +330,8 @@ Notice how Copilot:
 - **Esc**: Dismiss suggestion
 - **Alt+]**: Next suggestion
 - **Alt+[**: Previous suggestion
+
+Note: Shortcut bindings vary by keymap/profile. If any shortcut differs, use the command palette or Copilot status actions.
 
 ## What You've Built:
 

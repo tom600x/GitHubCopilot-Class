@@ -1,0 +1,214 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Modern Hero Section -->
+<section class="hero-section">
+    <div class="hero-background">
+        <div class="floating-elements">
+            <div class="floating-element" style="--delay: 0s; --duration: 8s;"></div>
+            <div class="floating-element" style="--delay: 2s; --duration: 12s;"></div>
+            <div class="floating-element" style="--delay: 4s; --duration: 10s;"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row align-items-center min-vh-100 py-5">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="bi bi-stars"></i>
+                        <span>AI-Powered Development</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Build Faster with
+                        <span class="gradient-text">GitHub Copilot</span>
+                    </h1>
+                    <p class="hero-description">
+                        Experience the future of coding with AI that understands your intent,
+                        suggests intelligent completions, and accelerates your development workflow.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-modern-primary btn-lg">
+                            <i class="bi bi-rocket-takeoff me-2"></i>
+                            Start Building
+                        </button>
+                        <button class="btn btn-modern-outline btn-lg">
+                            <i class="bi bi-play-circle me-2"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50%</div>
+                            <div class="stat-label">Faster Development</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">90%</div>
+                            <div class="stat-label">Code Accuracy</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">AI Assistant</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span class="code-text">
+                                    <span class="keyword">function</span> 
+                                    <span class="function">calculateSum</span>
+                                    <span class="punctuation">(</span>
+                                    <span class="parameter">numbers</span>
+                                    <span class="punctuation">) {</span>
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span class="code-text">
+                                    <span class="indent">  </span>
+                                    <span class="comment">// Copilot suggests:</span>
+                                </span>
+                            </div>
+                            <div class="code-line copilot-suggestion">
+                                <span class="line-number">3</span>
+                                <span class="code-text">
+                                    <span class="indent">  </span>
+                                    <span class="keyword">return</span> 
+                                    <span class="variable">numbers</span>
+                                    <span class="punctuation">.</span>
+                                    <span class="method">reduce</span>
+                                    <span class="punctuation">((</span>
+                                    <span class="parameter">a, b</span>
+                                    <span class="punctuation">) => </span>
+                                    <span class="variable">a</span>
+                                    <span class="operator"> + </span>
+                                    <span class="variable">b</span>
+                                    <span class="punctuation">, 0);</span>
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span class="code-text">
+                                    <span class="punctuation">}</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modern Features Section -->
+<section class="features-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="bi bi-cpu"></i>
+                <span>Powerful Features</span>
+            </div>
+            <h2 class="section-title">Everything you need to code smarter</h2>
+            <p class="section-description">
+                Discover the comprehensive suite of AI-powered tools designed to enhance your development experience
+            </p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="bi bi-lightning-charge"></i>
+                </div>
+                <div class="feature-content">
+                    <h3>Intelligent Completions</h3>
+                    <p>Get contextual code suggestions that understand your codebase, patterns, and intent in real-time.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Real-time</span>
+                        <span class="tag">Contextual</span>
+                        <span class="tag">Smart</span>
+                    </div>
+                </div>
+                <div class="feature-arrow">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="bi bi-chat-dots"></i>
+                </div>
+                <div class="feature-content">
+                    <h3>Interactive Chat</h3>
+                    <p>Engage in natural conversations to solve problems, debug code, and learn new concepts.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Conversational</span>
+                        <span class="tag">Debug</span>
+                        <span class="tag">Learn</span>
+                    </div>
+                </div>
+                <div class="feature-arrow">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="bi bi-gear-wide-connected"></i>
+                </div>
+                <div class="feature-content">
+                    <h3>Agent Workflow</h3>
+                    <p>Automate complex multi-step tasks with AI agents that understand your project structure.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Automated</span>
+                        <span class="tag">Multi-step</span>
+                        <span class="tag">Efficient</span>
+                    </div>
+                </div>
+                <div class="feature-arrow">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modern CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-card">
+            <div class="cta-content">
+                <h2>Ready to revolutionize your development?</h2>
+                <p>Join millions of developers who are already building faster and smarter with GitHub Copilot.</p>
+                <div class="cta-actions">
+                    <button class="btn btn-modern-primary btn-lg">
+                        <i class="bi bi-download me-2"></i>
+                        Get Started Free
+                    </button>
+                    <button class="btn btn-modern-ghost btn-lg">
+                        <i class="bi bi-book me-2"></i>
+                        View Documentation
+                    </button>
+                </div>
+            </div>
+            <div class="cta-visual">
+                <div class="floating-icons">
+                    <i class="bi bi-code-slash floating-icon" style="--delay: 0s;"></i>
+                    <i class="bi bi-robot floating-icon" style="--delay: 1s;"></i>
+                    <i class="bi bi-lightning floating-icon" style="--delay: 2s;"></i>
+                    <i class="bi bi-stars floating-icon" style="--delay: 3s;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
