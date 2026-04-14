@@ -4,18 +4,6 @@
 **Focus**: Master GitHub Copilot's inline code completion features  
 **Outcome**: Build a complete task management feature using only inline suggestions
 
-## 15-Minute Core Path
-
-Use this trimmed path for classroom timing:
-
-1. Complete Step 2 (Exercises 1-2)
-2. Complete Step 3 (Exercises 3-5)
-3. Complete Step 4 for Index/Create/Edit views (Exercises 6-8)
-4. Complete Step 5 navigation update (Exercise 10)
-5. Build/run and quick smoke test in Step 6
-
-Step 7 (Exercises 11-12) is optional stretch if time remains.
-
 ## Learning Objectives
 
 By the end of this lab, you will:
@@ -53,13 +41,13 @@ Take 2 minutes to explore:
 
 1. **Navigate** to `Models` folder
 2. **Create** new file: `TaskItem.cs`
-3. **Type this comment** and wait for Copilot:
+3. **Type this comment** and wait for Copilot, if copy and pasted right click and choose chat then type in Create and paste in the comment 
 
 ```csharp
 // TaskItem model class for CopilotDemo.Models namespace with properties: int Id, string Title (required), string Description (optional), DateTime DueDate (optional), bool IsCompleted, DateTime CreatedDate
 ```
 
-**🤖 Copilot Exercise 1**: Accept the suggestion and observe how Copilot builds the entire model.
+**🤖 Copilot Exercise 1**: Accept the suggestion and observe how Copilot builds the entire model.  If after pasting in the comment if copilot doesnt suggest right click and choose chat then paste in the comment.
 
 ### 2.2 Add Data Annotations
 
@@ -175,10 +163,10 @@ namespace CopilotDemo.Controllers
 
 ## Step 4: Generate Views with Inline Assistance
 
-### 4.1 Create Views Folder
+### 4.1 Create Views Folder and create empty views for index, edit, create and delete
 
 1. **Create** `Views/TaskItem` folder
-2. **For each view, start with an HTML comment**
+2. **For each view, start with an HTML comment** and if copilot does not fill in the information ask copilot to create the view
 
 ### 4.2 Index View
 
@@ -201,7 +189,7 @@ namespace CopilotDemo.Controllers
 
 ```html
 @* Bootstrap form for creating a new task item with proper form controls, validation summary, and submit/cancel buttons *@
-@model CopilotDemo.Models.TaskItem
+@model IEnumerable<CopilotDemo.Models.TaskItem>
 
 @{
     ViewData["Title"] = "Create Task Item";
