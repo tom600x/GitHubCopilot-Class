@@ -2,6 +2,34 @@
 
 This guide helps instructors and students run the GitHub Copilot labs on Visual Studio 2026 with .NET 10.
 
+## MCP Servers (Install First)
+
+Install these MCP servers before checking .NET and the other prerequisites:
+
+- Microsoft Learn MCP Server (`microsoftdocs/mcp`)
+- Playwright MCP
+- Chrome DevTools MCP
+
+### VS Code
+
+1. Install/enable GitHub Copilot and GitHub Copilot Chat extensions.
+2. Open MCP server management in VS Code.
+3. Add and enable:
+  - `microsoftdocs/mcp`
+  - Playwright MCP
+  - Chrome DevTools MCP
+4. Restart VS Code if prompted.
+
+### Visual Studio 2026
+
+1. Make sure GitHub Copilot and GitHub Copilot Chat are installed and enabled.
+2. Open MCP server/tooling configuration area.
+3. Add and enable:
+  - `microsoftdocs/mcp`
+  - Playwright MCP
+  - Chrome DevTools MCP
+4. Restart Visual Studio if prompted.
+
 ## Prerequisites
 
 - Visual Studio 2026 with GitHub Copilot and GitHub Copilot Chat
@@ -29,6 +57,10 @@ Expected result:
 
 Confirm each student has:
 
+- MCP servers installed and enabled:
+  - Microsoft Learn MCP Server (`microsoftdocs/mcp`)
+  - Playwright MCP
+  - Chrome DevTools MCP
 - VS 2026 signed in to GitHub
 - Copilot enabled in the IDE
 - .NET 10 available (`dotnet --version` reports 10.x)

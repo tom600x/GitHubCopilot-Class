@@ -12,6 +12,34 @@ This repository is a hands-on class for teaching GitHub Copilot using a pre-buil
 
 Total class time: 45 minutes.
 
+## MCP Servers (Install First)
+
+Install these MCP servers before checking prerequisites:
+
+- Microsoft Learn MCP Server (`microsoftdocs/mcp`)
+- Playwright MCP
+- Chrome DevTools MCP
+
+### VS Code
+
+1. Install/enable GitHub Copilot and GitHub Copilot Chat extensions.
+2. Open MCP server management in VS Code.
+3. Add and enable:
+    - `microsoftdocs/mcp`
+    - Playwright MCP
+    - Chrome DevTools MCP
+4. Restart VS Code if prompted.
+
+### Visual Studio 2026
+
+1. Make sure GitHub Copilot Completions and GitHub Copilot Chat are installed and enabled VS on versions prior to 17.9.  For Visual Studio 17.10 or higher, GitHub Copilot Chat is built-in to Visual Studio, it need not be installed as an extension. This extension Copilot Chat is only compatible with Visual Studio versions 17.8 - 17.9
+2. Open the MCP server/tooling configuration area.
+3. Add and enable:
+    - `microsoftdocs/mcp`
+    - Playwright MCP
+    - Chrome DevTools MCP
+4. Restart Visual Studio if prompted.
+
 ## Requirements
 
 - Visual Studio 2026 with GitHub Copilot and GitHub Copilot Chat enabled
@@ -26,17 +54,22 @@ Use this prompt in Copilot Chat before starting labs:
 Validate my environment for this repo and auto-install missing prerequisites where possible.
 
 Requirements:
+- MCP servers installed:
+    - Microsoft Learn MCP Server (`microsoftdocs/mcp`)
+    - Playwright MCP
+    - Chrome DevTools MCP
 - Visual Studio 2026 with GitHub Copilot and Copilot Chat
 - .NET 10 SDK
 - GitHub sign-in with Copilot access
 
 Please:
-1. Check what is already installed (dotnet version, VS version if detectable, and common tooling).
-2. List exactly what is missing.
-3. Automatically install anything safe and quick to install from terminal.
-4. Do NOT attempt to install Visual Studio 2026 from terminal (too large/slow). Only verify whether it is present.
-5. At minimum, auto-install .NET 10 SDK if missing.
-6. After setup, run quick validation commands and confirm I am ready.
+1. Confirm the three MCP servers are installed and enabled first.
+2. Check what is already installed (dotnet version, VS version if detectable, and common tooling).
+3. List exactly what is missing.
+4. Automatically install anything safe and quick to install from terminal.
+5. Do NOT attempt to install Visual Studio 2026 from terminal (too large/slow). Only verify whether it is present.
+6. At minimum, auto-install .NET 10 SDK if missing.
+7. After setup, run quick validation commands and confirm I am ready.
 
 For .NET SDK installation on Windows, prefer winget. If winget is unavailable, provide the exact manual install link and continue validation after I install it.
 ```
