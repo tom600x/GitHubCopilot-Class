@@ -35,19 +35,21 @@ Take 2 minutes to explore:
 - `Views/Home/Index.cshtml` - Homepage view
 - `Program.cs` - Basic web app configuration
 
-## Step 2: Create TaskItem Model with Inline Completion
+## Step 2: TaskItem Model (already present in BaseProject)
 
-### 2.1 Start with a Comment
+### 2.1 Review the Existing Model
 
-1. **Navigate** to `Models` folder
-2. **Create** new file: `TaskItem.cs`
-3. **Type this comment** and wait for Copilot, if copy and pasted right click and choose chat then type in Create and paste in the comment 
+The `TaskItem` model has already been added to the `BaseProject`. Instead of creating a new model, open and review the existing file to understand its properties and annotations.
+
+1. **Open** `BaseProject/Models/TaskItem.cs`
+2. **Inspect** the properties and data annotations (Required, Display, DataType)
+3. **If you want to regenerate or extend it**, paste a descriptive comment in the file to trigger Copilot inline suggestions. Example comment to guide Copilot:
 
 ```csharp
 // TaskItem model class for CopilotDemo.Models namespace with properties: int Id, string Title (required), string Description (optional), DateTime DueDate (optional), bool IsCompleted, DateTime CreatedDate
 ```
 
-**🤖 Copilot Exercise 1**: Accept the suggestion and observe how Copilot builds the entire model.  If after pasting in the comment if copilot doesnt suggest right click and choose chat then paste in the comment.
+**🤖 Copilot Exercise 1 (optional)**: If you choose to extend or modify the model, use the comment above and accept Copilot's inline suggestions to apply changes.
 
 ### 2.2 Add Data Annotations
 
@@ -115,7 +117,7 @@ namespace CopilotDemo.Controllers
 
 ### 3.2 Add In-Memory Data Store
 
-3. **Add this comment** inside the controller class:
+1. **Add this comment** inside the controller class:
 
 ```csharp
 // Static List<TaskItem> to store task items in memory with sample data for demo purposes
@@ -125,7 +127,7 @@ namespace CopilotDemo.Controllers
 
 ### 3.3 Implement Actions One by One
 
-4. **For each action, start with a comment**:
+1. **For each action, start with a comment**:
 
 ```csharp
 // GET: TaskItem/Index - Display all task items
@@ -163,10 +165,13 @@ namespace CopilotDemo.Controllers
 
 ## Step 4: Generate Views with Inline Assistance
 
-### 4.1 Create Views Folder and create empty views for index, edit, create and delete
+### 4.1 Create Views Folder and create views (Index, Create, Edit, Delete)
 
 1. **Create** `Views/TaskItem` folder
-2. **For each view, start with an HTML comment** and if copilot does not fill in the information ask copilot to create the view
+2. **For each view, paste a brief HTML comment describing the view** and wait a moment for Copilot's inline suggestion. If no inline suggestion appears:
+
+- Right-click the selection and choose "Copilot Chat", paste the comment into chat and ask Copilot to create the view.
+- Or press `Ctrl+Space` to trigger editor suggestions and accept a Copilot suggestion with `Tab`.
 
 ### 4.2 Index View
 
@@ -189,7 +194,7 @@ namespace CopilotDemo.Controllers
 
 ```html
 @* Bootstrap form for creating a new task item with proper form controls, validation summary, and submit/cancel buttons *@
-@model IEnumerable<CopilotDemo.Models.TaskItem>
+@model CopilotDemo.Models.TaskItem
 
 @{
     ViewData["Title"] = "Create Task Item";
@@ -240,19 +245,37 @@ When Copilot generates your Create and Edit views, you may see a reference to `@
 
 **💡 Note**: The `_ValidationScriptsPartial.cshtml` file is already included in your base project to support form validation.
 
-## Step 5: Add Navigation with Inline Help
+## Step 5: BaseProject scaffold (already applied)
 
-### 5.1 Update Layout Navigation
+What's already been added to the `BaseProject` for you:
+- `BaseProject/Models/TaskItem.cs` — TaskItem model class (data annotations included)
+- `BaseProject/Controllers/TaskItemController.cs` — contains an `Index()` action (other actions are left for you to implement)
+- `BaseProject/Views/TaskItem/` — empty scaffolded views: `Index.cshtml`, `Create.cshtml`, `Edit.cshtml`, `Delete.cshtml`
+- `BaseProject/Views/Shared/_Layout.cshtml` — navigation link for Task Items was added
 
-1. **Open** `Views/Shared/_Layout.cshtml`
-2. **Find** the navbar section with `<ul class="navbar-nav flex-grow-1">`
-3. **Add this comment** before the closing `</ul>`:
+Skip the manual layout + scaffolding steps below — the project already contains the minimal scaffold. Instead follow these next steps to finish the lab:
 
-```html
-<!-- Add Bootstrap nav-item and nav-link for Task Items controller Index action -->
+5.1 Verify scaffolded files
+- Open `BaseProject/Views/TaskItem/Index.cshtml`, `Create.cshtml`, `Edit.cshtml`, and `Delete.cshtml` to confirm they exist and are empty scaffolds you can edit.
+
+5.2 Implement controller actions (recommended: use inline completion)
+- Open `BaseProject/Controllers/TaskItemController.cs` and, for each action you want implemented (Details/Create[POST]/Edit[POST]/DeleteConfirmed), paste a descriptive comment and let Copilot generate the method body. Example comments:
+
+```csharp
+// POST: TaskItem/Create - Handle task item creation with model validation
 ```
 
-**🤖 Copilot Exercise 10**: Let Copilot suggest the navigation list item.
+If inline suggestions don't appear, use Copilot Chat or press `Ctrl+Space` to trigger suggestions.
+
+5.3 Populate the views
+- Open each view in `BaseProject/Views/TaskItem/` and paste a short HTML comment describing the view (index table, create form, edit form, delete confirmation). Let Copilot generate the markup. Fallback: use Copilot Chat or `Ctrl+Space`.
+
+5.4 Run and test
+- Build and run the `BaseProject` (`dotnet build` and run via your IDE). Navigate to the Task Items page from the site navbar and verify the Index view renders.
+
+Notes:
+- If you prefer to follow the lab purely from scratch, you can still follow the earlier Step 4 instructions to generate models/views in the lab workspace instead of using the scaffold in `BaseProject`.
+- The rest of the lab (Steps 6–7) remain the same: build/run, observe Copilot, and optionally enhance with search/statistics.
 
 ## Step 6: Test Your Copilot-Generated Feature
 
