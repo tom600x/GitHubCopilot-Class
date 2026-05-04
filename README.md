@@ -96,16 +96,6 @@ Then complete labs in order:
 - Testing: xUnit (introduced in labs)
 - Copilot: Inline, Chat (Ask), Agent
 
-## Copilot Guidance Validation (Current)
-
-The instructions in this repo are aligned to current GitHub Copilot workflows:
-
-- Chat and Agent are accessed from Copilot Chat with a mode selector.
-- Ask mode is best for explanation and guidance.
-- For focused code changes, use Copilot Edits or next edit suggestions.
-- Agent mode is best for multi-file, multi-step tasks with planning and execution.
-- Keyboard shortcuts can vary by IDE profile; command names in docs are authoritative.
-
 ## Project Structure
 
 ```text
