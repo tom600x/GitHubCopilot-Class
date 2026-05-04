@@ -26,7 +26,6 @@ Install these MCP servers before checking prerequisites:
 3. Add and enable:
     - `microsoftdocs/mcp`
     - Playwright MCP
-    - Chrome DevTools MCP
 4. Restart VS Code if prompted.
 
 ### Visual Studio 2026
@@ -36,7 +35,6 @@ Install these MCP servers before checking prerequisites:
 3. Add and enable:
     - `microsoftdocs/mcp`
     - Playwright MCP
-    - Chrome DevTools MCP
 4. Restart Visual Studio if prompted.
 
 ## Requirements
@@ -56,13 +54,12 @@ Requirements:
 - MCP servers installed:
     - Microsoft Learn MCP Server (`microsoftdocs/mcp`)
     - Playwright MCP
-    - Chrome DevTools MCP
 - Visual Studio 2026 with GitHub Copilot and Copilot Chat
 - .NET 10 SDK
 - GitHub sign-in with Copilot access
 
 Please:
-1. Confirm the three MCP servers are installed and enabled first.
+1. Confirm the MCP servers are installed and enabled first.
 2. Check what is already installed (dotnet version, VS version if detectable, and common tooling).
 3. List exactly what is missing.
 4. Automatically install anything safe and quick to install from terminal.
