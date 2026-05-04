@@ -18,7 +18,6 @@ Install these MCP servers before checking prerequisites:
 
 - Microsoft Learn MCP Server (`microsoftdocs/mcp`)
 - Playwright MCP
-- Chrome DevTools MCP
 
 ### VS Code
 
